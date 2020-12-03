@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<ui-list uilistdirective>
+  <ui-list-item
+    *ngFor="let item of items"
+    [text]="item.text"
+    [secondText]="item.secondText"
+    uiListItemDirective
+    [value]="item"
+  >
+  </ui-list-item>
+</ui-list>
